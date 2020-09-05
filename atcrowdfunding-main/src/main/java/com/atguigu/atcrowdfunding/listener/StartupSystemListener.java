@@ -11,7 +11,7 @@ public class StartupSystemListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         ServletContext application = servletContextEvent.getServletContext();
         String contextPath = application.getContextPath();
-        System.out.println("contextPath ydqshjdhasjkj= " + contextPath);
+        System.out.println("contextPath = " + contextPath);
 
         application.setAttribute(Const.PATH, contextPath);
     }
